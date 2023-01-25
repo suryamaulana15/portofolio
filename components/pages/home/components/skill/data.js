@@ -1,0 +1,18 @@
+export const data = [
+  "Frontend Developer",
+  "NextJS",
+  "ReactJS",
+  "React Testing Library",
+  "Redux",
+  "Javascript",
+  "es6",
+  "Html5",
+  "css3",
+  "Material-ui",
+  "Ant-d",
+  "RESTful APIs",
+  "GitLab",
+  "unix",
+  "Laravel",
+  "Php",
+];
