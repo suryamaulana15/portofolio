@@ -15,8 +15,10 @@ function Skill() {
       </Typography>
 
       <Stack direction={"row"} columnGap={2} display={"flex"} flexWrap={"wrap"}>
-        {data.map((skill) => (
-          <Typography color={palette.text.secondary}>{skill},</Typography>
+        {data.map((skill, index) => (
+          <Typography key={index} color={palette.text.secondary}>
+            {skill},
+          </Typography>
         ))}
       </Stack>
     </Stack>

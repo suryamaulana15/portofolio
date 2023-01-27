@@ -7,7 +7,7 @@ import {
   useTheme,
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import profile from "public/images/profile.JPG";
+import profile from "public/images/profile-2.jpg";
 import Image from "next/image";
 import IGIcon from "@/public/images/icon/ig.png";
 import FBIcon from "@/public/images/icon/fb.png";
@@ -35,7 +35,7 @@ function Jumbotron() {
                 aspectRatio: 1 / 1,
                 width: "100%",
                 height: "auto",
-                borderRadius: "50%",
+                borderRadius: "50px",
               }}
             />
           </Stack>
