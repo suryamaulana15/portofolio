@@ -8,6 +8,8 @@ import POSBeelife from "@/public/images/portfolio/pos beelife.png";
 import goldScanner from "@/public/images/portfolio/gold-scanner.png";
 import eoaWater from "@/public/images/portfolio/eoa-water.png";
 import POSGold from "@/public/images/portfolio/pos-gold.png";
+import ngampooz from "@/public/images/portfolio/ngampooz/ngampooz1.png";
+import aogMog from "@/public/images/portfolio/aog-mog/aog-mog1.png";
 
 import bapendaLogo from "@/public/images/portfolio/megawe/bapendaLogo.png";
 import ARLogo from "@/public/images/portfolio/AR/Logo Amazing Riyadoh 2.png";
@@ -19,6 +21,8 @@ import waterLogo from "@/public/images/portfolio/water/waterLogo.png";
 import goldLogo from "@/public/images/portfolio/gold/goldLogo.png";
 import tvriLogo from "@/public/images/portfolio/tvriLogo.png";
 import qurbanLogo from "@/public/images/portfolio/qurbanLogo.png";
+import ngampoozLogo from "@/public/images/portfolio/ngampooz/ngampooz-logo.png";
+import aogMogLogo from "@/public/images/portfolio/aog-mog/aog-mog-logo.png";
 
 import androidIcon from "@/public/images/icon/android.png";
 import iOsIcon from "@/public/images/icon/iOs.png";
@@ -26,20 +30,20 @@ import webIcon from "@/public/images/icon/web.png";
 
 export const data = [
   {
-    image: bapenda,
+    image: ngampooz,
     platform: [androidIcon, iOsIcon, webIcon],
-    logo: bapendaLogo,
-    title: "Megawe Bapenda",
-    description: "Presence System for Bapenda Employees",
-    url: "/portofolio/Megawe Bapenda",
+    logo: ngampoozLogo,
+    title: "Ngampooz",
+    description: "E-Ticketing Events",
+    url: "/portofolio/Ngampooz",
   },
   {
-    image: POSAstra,
-    platform: [androidIcon],
-    logo: dimitriLogo,
-    title: "POS DIMITRI Astra",
-    description: " Point of Sales from Astra International",
-    url: "/portofolio/POS DIMITRI Astra",
+    image: aogMog,
+    platform: [webIcon],
+    logo: aogMogLogo,
+    title: "AOG MOG Registration",
+    description: "EOA Gold - Agent/Member of Gold Registration",
+    url: "/portofolio/AOG MOG Registration",
   },
   {
     image: amazingRiyadhoh,

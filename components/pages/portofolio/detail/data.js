@@ -6,6 +6,10 @@ import beelifeLogo from "@/public/images/portfolio/beelife/beelifeLogo.png";
 import scannerLogo from "@/public/images/portfolio/scanner/scannerLogo (1).png";
 import waterLogo from "@/public/images/portfolio/water/waterLogo.png";
 import goldLogo from "@/public/images/portfolio/gold/goldLogo.png";
+import tvriLogo from "@/public/images/portfolio/tvri/tvriLogo.png";
+import salamQurbanLogo from "@/public/images/portfolio/salamQurban/salam-qurban-logo.png";
+import ngampoozLogo from "@/public/images/portfolio/ngampooz/ngampooz-logo.png";
+import aogMogLogo from "@/public/images/portfolio/aog-mog/aog-mog-logo.png";
 
 import bapenda1 from "@/public/images/portfolio/megawe/bapenda1.png";
 import bapenda2 from "@/public/images/portfolio/megawe/bapenda2.png";
@@ -31,6 +35,18 @@ import water3 from "@/public/images/portfolio/water/water3.png";
 import gold1 from "@/public/images/portfolio/gold/gold1.png";
 import gold2 from "@/public/images/portfolio/gold/gold2.png";
 import gold3 from "@/public/images/portfolio/gold/gold3.png";
+import tvri1 from "@/public/images/portfolio/tvri/tvri1.png";
+import tvri2 from "@/public/images/portfolio/tvri/tvri2.png";
+import tvri3 from "@/public/images/portfolio/tvri/tvri3.png";
+import salamQurban1 from "@/public/images/portfolio/salamQurban/salam-qurban1.png";
+import salamQurban2 from "@/public/images/portfolio/salamQurban/salam-qurban2.png";
+import salamQurban3 from "@/public/images/portfolio/salamQurban/salam-qurban3.png";
+import ngampooz1 from "@/public/images/portfolio/ngampooz/ngampooz1.png";
+import ngampooz2 from "@/public/images/portfolio/ngampooz/ngampooz2.png";
+import ngampooz3 from "@/public/images/portfolio/ngampooz/ngampooz3.png";
+import aogMog1 from "@/public/images/portfolio/aog-mog/aog-mog1.png";
+import aogMog2 from "@/public/images/portfolio/aog-mog/aog-mog2.png";
+import aogMog3 from "@/public/images/portfolio/aog-mog/aog-mog3.png";
 
 import appleIcon from "@/public/images/portfolio/AR/Vector.png";
 import dnsIcon from "@/public/images/portfolio/AR/dns.png";
@@ -44,59 +60,51 @@ import playStore from "@/public/images/portfolio/Google Play.png";
 export const data = [
   {
     category: "IT/Software Development",
-    logo: bapendaLogo,
-    title: "Megawe Bapenda",
+    logo: ngampoozLogo,
+    title: "Ngampooz",
     subtitle: [
-      "Presence System for Bapenda Employees",
-      "Presence employees with Geolocation",
-      "Target Overview of Revenue",
+      "E-Ticketing Events",
+      "E-Ticketing Online & Offline OTS",
+      "Magic Scan Presence",
     ],
     description: [
-      "Megawe Bapenda adalah aplikasi untuk memonitoring kinerja pegawai\n" +
-        "Badan Pendapatan Daerah Kota Serang secara real time menggunakan\n" +
-        "titik koordinat lokasi. Aplikasi ini juga untuk memantau pegawai yang\n" +
-        "hadir di kantor, pegawai yang sedang ke lapangan, pegawai yang sedang\n" +
-        "izin, pegawai yang sedang sakit dan pegawai yang sedang melakukan\n" +
-        "perjalanan dinas.",
-      "Lorem ipsum dolor sit amet consectetur. Ac a pharetra mauris varius varius vitae. Interdum platea diam id neque purus nam vehicula. Adipiscing odio tortor odio sit justo duis sed tellus. Cras tempor est ipsum dignissim orci. Id blandit nec sit in. Montes velit viverra eget placerat sodales. Sit viverra varius amet fermentum nibh. Odio posuere gravida sed blandit duis. A molestie proin fames neque lacus nulla metus est.",
-      "Lorem ipsum dolor sit amet consectetur. Neque ultricies dolor montes dolor quis orci in. Scelerisque nam id enim at tellus enim feugiat ipsum vitae. Vitae pulvinar id feugiat feugiat sociis ipsum porta eget. Sollicitudin condimentum lectus suscipit gravida velit consequat commodo. Sed consectetur eget enim nunc magna eleifend aliquam fermentum. Amet senectus gravida nulla nunc aenean massa commodo neque morbi. Pharetra id netus velit ante erat mollis egestas sed. Vulputate in sed malesuada duis duis sed cursus sit. Dolor donec quis nibh suspendisse lacus porttitor ut.",
+      "Ngampooz merupakan aplikasi yang dapat membantu kamu mencari informasi dan mendapatkan tiket untuk seminar, workshop, open class dan acara hiburan lainnya. Dapatkan info promo dan beasiswa di aplikasi Ngampooz.",
+      "Tiket online tanpa perlu cetak fisik memudahkan dalam melakukan pembelian tiket acara apapun. Acara seminar offline atau webinar online dapat dengan mudah digunakan pada aplikasi ngampooz ini.",
+      "Proses presensi/kehadiran peserta pada acara menjadi lebih cepat dengan fitur magic scan yang langsung dapat mendeteksi acara dan peserta dengan spesifik, dilakukan dengan aplikasi ngampooz partner yang mengadakan acara.",
     ],
-    platform: [playStore],
-    image: [bapenda1, bapenda2, bapenda3],
-    technology: [andoridIcon, dnsIcon],
+    platform: [playStore, appStore, web],
+    image: [ngampooz1, ngampooz2, ngampooz3],
+    technology: [appleIcon, andoridIcon, webIcon, dnsIcon],
     deliverables: [
-      "Manage Presence Employees",
-      "Geolocation",
-      "Target Overview of Revenue",
-      "Cloud Backend Systems",
+      "Ngampooz Web & Apps",
+      "Ngampooz Partner Web & Apps",
+      "Multiple Ticket with Magic Scan to Presence",
+      "Payment Gateway",
     ],
     complexity: "hard",
   },
   {
     category: "IT/Software Development",
-    logo: dimitriLogo,
-    title: "POS DIMITRI Astra",
+    logo: aogMogLogo,
+    title: "AOG MOG Registration",
     subtitle: [
-      "Point of Sales from Astra International",
-      "Point of Sales System",
-      "Manage Product, Customer and Supplier",
+      "EOA Gold - Agent/Member of Gold Registration",
+      "Registration Form AOG/MOG",
+      "Setting WhatsApp Message",
     ],
     description: [
-      "Dimitri Astra adalah aplikasi yang membantu Dealer dan Supplier spare\n" +
-        "part untuk mempermudah dalam mengatur transaksi pembelian dan\n" +
-        "penjualan pada produk, meliputi mengatur stok, transaksi pembelian dan\n" +
-        "penjualan, hingga laporan penjualannya.",
-      "Lorem ipsum dolor sit amet consectetur. Ac a pharetra mauris varius varius vitae. Interdum platea diam id neque purus nam vehicula. Adipiscing odio tortor odio sit justo duis sed tellus. Cras tempor est ipsum dignissim orci. Id blandit nec sit in. Montes velit viverra eget placerat sodales. Sit viverra varius amet fermentum nibh. Odio posuere gravida sed blandit duis. A molestie proin fames neque lacus nulla metus est.",
-      "Lorem ipsum dolor sit amet consectetur. Neque ultricies dolor montes dolor quis orci in. Scelerisque nam id enim at tellus enim feugiat ipsum vitae. Vitae pulvinar id feugiat feugiat sociis ipsum porta eget. Sollicitudin condimentum lectus suscipit gravida velit consequat commodo. Sed consectetur eget enim nunc magna eleifend aliquam fermentum. Amet senectus gravida nulla nunc aenean massa commodo neque morbi. Pharetra id netus velit ante erat mollis egestas sed. Vulputate in sed malesuada duis duis sed cursus sit. Dolor donec quis nibh suspendisse lacus porttitor ut.",
+      "Registrasi Agent of Gold & Member of Gold merupakan sistem aplikasi yang membantu para calon AOG/MOG melakukan pendaftaran dengan format nomor ID generate, minimal pembelian EOA Gold dan ketentuan-ketentuan lainnya yang dapat disesuaikan pada sistem yang melibatkan beberapa pengguna seperti admin, cabang maupun AOG dan MOG tersebut.",
+      "Lorem ipsum dolor sit amet consectetur. Malesuada fermentum mi egestas felis hendrerit volutpat fames vitae. Blandit at sem ac viverra elit ultrices in duis lacus. Euismod egestas semper venenatis habitant dictumst vitae blandit. Aenean sed nibh nisl eu id nulla.",
+      "Lorem ipsum dolor sit amet consectetur. Malesuada fermentum mi egestas felis hendrerit volutpat fames vitae. Blandit at sem ac viverra elit ultrices in duis lacus. Euismod egestas semper venenatis habitant dictumst vitae blandit. Aenean sed nibh nisl eu id nulla.",
     ],
-    platform: [playStore],
-    image: [dimitri1, dimitri2, dimitri3],
-    technology: [andoridIcon, dnsIcon],
+    platform: [web],
+    image: [aogMog1, aogMog2, aogMog3],
+    technology: [webIcon, dnsIcon],
     deliverables: [
-      "Point of Sales System",
-      "Manage Product, Customer and Supplier",
-      "Report Selling",
-      "Cloud Backend Systems",
+      "Registration & Upgrade Form AOG/MOG",
+      "Integrated with Another System (POS Gold)",
+      "Payment Confirmatoin with Setting WhatsApp",
+      "Statistic Agent/Member of Gold",
     ],
     complexity: "hard",
   },
@@ -152,51 +160,51 @@ export const data = [
   },
   {
     category: "IT/Software Development",
-    logo: ARLogo,
+    logo: salamQurbanLogo,
     title: "Salam Kurban",
     subtitle: [
-      "Best apps to upgrade your worships",
-      "Group Target Riyadhoh",
-      "Forum Group",
+      "Selling Qurban more easier with Salam Kurban",
+      "Mobile Apps Qurban",
+      "Admin Web Console",
     ],
     description: [
-      "Amazing Riyadhoh adalah aplikasi muslim dengan banyak fitur bermanfaat yang akan membantu kamu melakukan evaluasi ibadah harian. Tidak cuma itu, dengan aplikasi Amazing Riyadhoh juga bisa meningkatkan produktivitas dan kapasitas diri, menambah wawasan dengan konten-konten islami, menambah teman di komunitas islami dan masih banyak manfaat lainnya yang bisa didapatkan.",
-      "Memungkinkan pengguna bergabung dengan group untuk melakukan riyadhoh ibadah bersama-sama dalam mencapai target yang telah ditentukan sebelumnya seperti target ibadah sholat, membaca Al-Qur’an, berpuasa, ziswaf dan dzikir baik dalam hitungan keseluruhan maupun spesifik. Admin group dapat menambahkan beberapa anggota untuk menjadi admin untuk dapat membuat target-target riyadhoh ibadah bersama-sama dalam group tersebut.",
-      "Fitur Forum Group memungkinkan pengguna admin untuk membuat postingan dengan beberapa kategori yang ada. Anggota pada group dapat melihat postingan untuk dapat saling berkomentar dan menyukai postingan.",
+      "Salam Kurban merupakan aplikasi penjualan kurban yang memungkinkan pembeli dapat dengan mudah mencari hewan qurban seperti kambing, sapi maupun kerbau dengan berbagai macam pilihan dan varian hewan qurban yang tersedia pada aplikasi.",
+      "Lorem ipsum dolor sit amet consectetur. Malesuada fermentum mi egestas felis hendrerit volutpat fames vitae. Blandit at sem ac viverra elit ultrices in duis lacus. Euismod egestas semper venenatis habitant dictumst vitae blandit. Aenean sed nibh nisl eu id nulla.",
+      "Lorem ipsum dolor sit amet consectetur. Malesuada fermentum mi egestas felis hendrerit volutpat fames vitae. Blandit at sem ac viverra elit ultrices in duis lacus. Euismod egestas semper venenatis habitant dictumst vitae blandit. Aenean sed nibh nisl eu id nulla.",
     ],
-    platform: [playStore, appStore],
-    image: [porto1, porto2, porto3],
-    technology: [appleIcon, andoridIcon, webIcon, dnsIcon],
+    platform: [playStore, web],
+    image: [salamQurban1, salamQurban2, salamQurban3],
+    technology: [andoridIcon, webIcon, dnsIcon],
     deliverables: [
-      "iOS & Android User App",
-      "Android Driver App",
+      "Salam Kurban Apps",
+      "Sign In with Google & Apple ID",
       "Admin Web Console",
       "Cloud Backend Systems",
     ],
-    complexity: "hard",
+    complexity: "medium",
   },
   {
     category: "IT/Software Development",
-    logo: ARLogo,
+    logo: tvriLogo,
     title: "TVRI",
     subtitle: [
-      "Best apps to upgrade your worships",
-      "Group Target Riyadhoh",
-      "Forum Group",
+      "Company Profile TVRI, PPID & JDIH",
+      "Company Profile & 2 others",
+      "Live Streaming",
     ],
     description: [
-      "Amazing Riyadhoh adalah aplikasi muslim dengan banyak fitur bermanfaat yang akan membantu kamu melakukan evaluasi ibadah harian. Tidak cuma itu, dengan aplikasi Amazing Riyadhoh juga bisa meningkatkan produktivitas dan kapasitas diri, menambah wawasan dengan konten-konten islami, menambah teman di komunitas islami dan masih banyak manfaat lainnya yang bisa didapatkan.",
-      "Memungkinkan pengguna bergabung dengan group untuk melakukan riyadhoh ibadah bersama-sama dalam mencapai target yang telah ditentukan sebelumnya seperti target ibadah sholat, membaca Al-Qur’an, berpuasa, ziswaf dan dzikir baik dalam hitungan keseluruhan maupun spesifik. Admin group dapat menambahkan beberapa anggota untuk menjadi admin untuk dapat membuat target-target riyadhoh ibadah bersama-sama dalam group tersebut.",
-      "Fitur Forum Group memungkinkan pengguna admin untuk membuat postingan dengan beberapa kategori yang ada. Anggota pada group dapat melihat postingan untuk dapat saling berkomentar dan menyukai postingan.",
+      "TVRI adalah media publik dengan integritas tinggi untuk menyuarakan berbagai nilai, budaya, dan keberagaman yang menjadi kebanggaan Indonesia melalui konten programnya yang berkualitas ke seluruh lapisan masyarakat hingga ke berbagai penjuru tempat.",
+      "Lorem ipsum dolor sit amet consectetur. Malesuada fermentum mi egestas felis hendrerit volutpat fames vitae. Blandit at sem ac viverra elit ultrices in duis lacus. Euismod egestas semper venenatis habitant dictumst vitae blandit. Aenean sed nibh nisl eu id nulla.",
+      "Lorem ipsum dolor sit amet consectetur. Malesuada fermentum mi egestas felis hendrerit volutpat fames vitae. Blandit at sem ac viverra elit ultrices in duis lacus. Euismod egestas semper venenatis habitant dictumst vitae blandit. Aenean sed nibh nisl eu id nulla.",
     ],
     platform: [web],
-    image: [porto1, porto2, porto3],
-    technology: [appleIcon, andoridIcon, webIcon, dnsIcon],
+    image: [tvri1, tvri2, tvri3],
+    technology: [webIcon, dnsIcon],
     deliverables: [
-      "iOS & Android User App",
-      "Android Driver App",
-      "Admin Web Console",
-      "Cloud Backend Systems",
+      "Company Profile",
+      "Layanan Informasi (JDIH)",
+      "Layanan PPID",
+      "Streaming Klik TVRI",
     ],
     complexity: "medium",
   },
