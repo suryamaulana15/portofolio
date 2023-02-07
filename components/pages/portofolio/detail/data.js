@@ -1,6 +1,4 @@
-import bapendaLogo from "@/public/images/portfolio/megawe/bapendaLogo.png";
 import ARLogo from "@/public/images/portfolio/AR/Logo Amazing Riyadoh 2.png";
-import dimitriLogo from "@/public/images/portfolio/dimitri/dimtriLogo.png";
 import eventLogo from "@/public/images/portfolio/event/eventLogo.png";
 import beelifeLogo from "@/public/images/portfolio/beelife/beelifeLogo.png";
 import scannerLogo from "@/public/images/portfolio/scanner/scannerLogo (1).png";
@@ -11,12 +9,6 @@ import salamQurbanLogo from "@/public/images/portfolio/salamQurban/salam-qurban-
 import ngampoozLogo from "@/public/images/portfolio/ngampooz/ngampooz-logo.png";
 import aogMogLogo from "@/public/images/portfolio/aog-mog/aog-mog-logo.png";
 
-import bapenda1 from "@/public/images/portfolio/megawe/bapenda1.png";
-import bapenda2 from "@/public/images/portfolio/megawe/bapenda2.png";
-import bapenda3 from "@/public/images/portfolio/megawe/bapenda3.png";
-import dimitri1 from "@/public/images/portfolio/dimitri/dimitri1.png";
-import dimitri2 from "@/public/images/portfolio/dimitri/dimitri2.png";
-import dimitri3 from "@/public/images/portfolio/dimitri/dimitri3.png";
 import porto1 from "@/public/images/portfolio/AR/Amazing Riyadhoh Portfolio 1.png";
 import porto2 from "@/public/images/portfolio/AR/Amazing Riyadhoh Portfolio 1 (1).png";
 import porto3 from "@/public/images/portfolio/AR/Amazing Riyadhoh Portfolio 1 (2).png";
@@ -53,6 +45,23 @@ import dnsIcon from "@/public/images/portfolio/AR/dns.png";
 import andoridIcon from "@/public/images/portfolio/AR/Group.png";
 import webIcon from "@/public/images/portfolio/AR/Vector (1).png";
 
+import reactIcon from "@/public/images/icon/reactIcon.svg";
+import reduxIcon from "@/public/images/icon/reduxIcon.svg";
+import materialIcon from "@/public/images/icon/materialIcon.svg";
+import bootsrtapIcon from "@/public/images/icon/bootsrtapIcon.svg";
+import antdesignIcon from "@/public/images/icon/antdesignIcon.svg";
+import nextjsIcon from "@/public/images/icon/nextjsIcon.svg";
+import gitlabIcon from "@/public/images/icon/gitlabIcon.svg";
+import laravelIcon from "@/public/images/icon/laravelIcon.svg";
+import mariaDb from "@/public/images/icon/mariaDb.svg";
+import phpIcon from "@/public/images/icon/phpIcon.svg";
+import javascriptIcon from "@/public/images/icon/javascriptIcon.svg";
+import jqueryIcon from "@/public/images/icon/jqueryIcon.svg";
+import frontendIcon from "@/public/images/icon/frontendIcon.jpg";
+import backendIcon from "@/public/images/icon/backendIcon.png";
+import fullstackIcon from "@/public/images/icon/fullstackIcon.png";
+import tailwindIcon from "@/public/images/icon/tailwindIcon.svg";
+
 import web from "@/public/images/portfolio/web.png";
 import appStore from "@/public/images/portfolio/App Store.png";
 import playStore from "@/public/images/portfolio/Google Play.png";
@@ -75,6 +84,12 @@ export const data = [
     platform: [playStore, appStore, web],
     image: [ngampooz1, ngampooz2, ngampooz3],
     technology: [appleIcon, andoridIcon, webIcon, dnsIcon],
+    technologyApps: [
+      { icon: phpIcon, name: "PHP" },
+      { icon: laravelIcon, name: "Laravel" },
+      { icon: mariaDb, name: "Maria DB" },
+      { icon: gitlabIcon, name: "Gitlab" },
+    ],
     deliverables: [
       "Ngampooz Web & Apps",
       "Ngampooz Partner Web & Apps",
@@ -82,6 +97,7 @@ export const data = [
       "Payment Gateway",
     ],
     complexity: "hard",
+    role: { icon: backendIcon, name: "backend" },
   },
   {
     category: "IT/Software Development",
@@ -100,6 +116,16 @@ export const data = [
     platform: [web],
     image: [aogMog1, aogMog2, aogMog3],
     technology: [webIcon, dnsIcon],
+    technologyApps: [
+      { icon: phpIcon, name: "PHP" },
+      { icon: laravelIcon, name: "Laravel" },
+      { icon: mariaDb, name: "Maria DB" },
+      { icon: gitlabIcon, name: "Gitlab" },
+      { icon: javascriptIcon, name: "JavaScript" },
+      { icon: reactIcon, name: "React" },
+      { icon: reduxIcon, name: "Redux" },
+      { icon: materialIcon, name: "Material-ui" },
+    ],
     deliverables: [
       "Registration & Upgrade Form AOG/MOG",
       "Integrated with Another System (POS Gold)",
@@ -107,6 +133,7 @@ export const data = [
       "Statistic Agent/Member of Gold",
     ],
     complexity: "hard",
+    role: { icon: fullstackIcon, name: "fullstack" },
   },
   {
     category: "IT/Software Development",
@@ -125,6 +152,13 @@ export const data = [
     platform: [playStore, appStore, web],
     image: [porto1, porto2, porto3],
     technology: [appleIcon, andoridIcon, webIcon, dnsIcon],
+    technologyApps: [
+      { icon: javascriptIcon, name: "JavaScript" },
+      { icon: reactIcon, name: "React" },
+      { icon: reduxIcon, name: "Redux" },
+      { icon: materialIcon, name: "Material-ui" },
+      { icon: gitlabIcon, name: "Gitlab" },
+    ],
     deliverables: [
       "iOS & Android User App",
       "Android Driver App",
@@ -132,6 +166,7 @@ export const data = [
       "Cloud Backend Systems",
     ],
     complexity: "hard",
+    role: { icon: frontendIcon, name: "frontend" },
   },
   {
     category: "IT/Software Development",
@@ -150,6 +185,13 @@ export const data = [
     platform: [web],
     image: [event1, event2, event3],
     technology: [webIcon, dnsIcon],
+    technologyApps: [
+      { icon: phpIcon, name: "PHP" },
+      { icon: laravelIcon, name: "Laravel" },
+      { icon: bootsrtapIcon, name: "Bootstrap" },
+      { icon: jqueryIcon, name: "jQuery" },
+      { icon: gitlabIcon, name: "Gitlab" },
+    ],
     deliverables: [
       "E-Ticketing Event",
       "Payment Gateway",
@@ -157,6 +199,7 @@ export const data = [
       "Cloud Backend Systems",
     ],
     complexity: "hard",
+    role: { icon: frontendIcon, name: "frontend" },
   },
   {
     category: "IT/Software Development",
@@ -175,6 +218,13 @@ export const data = [
     platform: [playStore, web],
     image: [salamQurban1, salamQurban2, salamQurban3],
     technology: [andoridIcon, webIcon, dnsIcon],
+    technologyApps: [
+      { icon: javascriptIcon, name: "JavaScript" },
+      { icon: reactIcon, name: "React" },
+      { icon: reduxIcon, name: "Redux" },
+      { icon: materialIcon, name: "Material-ui" },
+      { icon: gitlabIcon, name: "Gitlab" },
+    ],
     deliverables: [
       "Salam Kurban Apps",
       "Sign In with Google & Apple ID",
@@ -182,6 +232,7 @@ export const data = [
       "Cloud Backend Systems",
     ],
     complexity: "medium",
+    role: { icon: frontendIcon, name: "frontend" },
   },
   {
     category: "IT/Software Development",
@@ -200,6 +251,13 @@ export const data = [
     platform: [web],
     image: [tvri1, tvri2, tvri3],
     technology: [webIcon, dnsIcon],
+    technologyApps: [
+      { icon: phpIcon, name: "PHP" },
+      { icon: laravelIcon, name: "Laravel" },
+      { icon: bootsrtapIcon, name: "Bootstrap" },
+      { icon: jqueryIcon, name: "jQuery" },
+      { icon: gitlabIcon, name: "Gitlab" },
+    ],
     deliverables: [
       "Company Profile",
       "Layanan Informasi (JDIH)",
@@ -207,6 +265,7 @@ export const data = [
       "Streaming Klik TVRI",
     ],
     complexity: "medium",
+    role: { icon: frontendIcon, name: "frontend" },
   },
   {
     category: "IT/Software Development",
@@ -226,6 +285,13 @@ export const data = [
     platform: [web],
     image: [beelife1, beelife2, beelife3],
     technology: [appleIcon, andoridIcon, webIcon, dnsIcon],
+    technologyApps: [
+      { icon: javascriptIcon, name: "JavaScript" },
+      { icon: reactIcon, name: "React" },
+      { icon: reduxIcon, name: "Redux" },
+      { icon: materialIcon, name: "Material-ui" },
+      { icon: gitlabIcon, name: "Gitlab" },
+    ],
     deliverables: [
       "Distribution System",
       "Point of Sales System",
@@ -233,6 +299,7 @@ export const data = [
       "Cloud Backend Systems",
     ],
     complexity: "hard",
+    role: { icon: frontendIcon, name: "frontend" },
   },
   {
     category: "IT/Software Development",
@@ -251,6 +318,13 @@ export const data = [
     platform: [playStore, web],
     image: [scanner1, scanner2, scanner3],
     technology: [andoridIcon, webIcon, dnsIcon],
+    technologyApps: [
+      { icon: javascriptIcon, name: "JavaScript" },
+      { icon: reactIcon, name: "React" },
+      { icon: reduxIcon, name: "Redux" },
+      { icon: materialIcon, name: "Material-ui" },
+      { icon: gitlabIcon, name: "Gitlab" },
+    ],
     deliverables: [
       "Android User App",
       "Validity Scanner",
@@ -258,6 +332,7 @@ export const data = [
       "Cloud Backend Systems",
     ],
     complexity: "medium",
+    role: { icon: frontendIcon, name: "frontend" },
   },
   {
     category: "IT/Software Development",
@@ -272,6 +347,13 @@ export const data = [
     platform: [web],
     image: [water1, water2, water3],
     technology: [webIcon, dnsIcon],
+    technologyApps: [
+      { icon: javascriptIcon, name: "JavaScript" },
+      { icon: reactIcon, name: "React" },
+      { icon: reduxIcon, name: "Redux" },
+      { icon: materialIcon, name: "Material-ui" },
+      { icon: gitlabIcon, name: "Gitlab" },
+    ],
     deliverables: [
       "Responsive Web App",
       "Beautiful UI",
@@ -279,6 +361,7 @@ export const data = [
       "Cloud Backend Systems",
     ],
     complexity: "medium",
+    role: { icon: frontendIcon, name: "frontend" },
   },
   {
     category: "IT/Software Development",
@@ -297,6 +380,13 @@ export const data = [
     platform: [web],
     image: [gold1, gold2, gold3],
     technology: [webIcon, dnsIcon],
+    technologyApps: [
+      { icon: javascriptIcon, name: "JavaScript" },
+      { icon: reactIcon, name: "React" },
+      { icon: reduxIcon, name: "Redux" },
+      { icon: materialIcon, name: "Material-ui" },
+      { icon: gitlabIcon, name: "Gitlab" },
+    ],
     deliverables: [
       "Manage Product Price",
       "Agent of Gold System",
@@ -304,5 +394,6 @@ export const data = [
       "Cloud Backend Systems",
     ],
     complexity: "hard",
+    role: { icon: frontendIcon, name: "frontend" },
   },
 ];

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Icon, IconButton, Typography, Box } from "@mui/material";
-import Logo from "../../../../../public/images/icon/Logo.png";
+import Logo from "../../../../../public/images/icon/logo_default.png";
 import IGIcon from "../../../../../public/images/icon/ig.png";
 import FBIcon from "../../../../../public/images/icon/fb.png";
 import INIcon from "../../../../../public/images/icon/in.png";
@@ -27,55 +27,73 @@ function FooterComponent() {
       <Box
         sx={{
           display: "flex",
+          flexDirection: { xs: "column", lg: "row" },
           justifyContent: "space-between",
-          alignItems: "center",
+          alignItems: { xs: "flex-start", lg: "center" },
         }}
       >
         <IconButton>
-          <Image src={Logo} alt={"logo"} />
+          <Image
+            src={Logo}
+            alt={"logo"}
+            style={{ width: 80, height: "auto" }}
+          />
         </IconButton>
-        <Box sx={{ display: { lg: "inherit", xs: "none" } }}>
-          <IconButton>
-            <Icon>
-              <Image src={IGIcon} alt={"ig-icon"} />
-            </Icon>
-          </IconButton>
-          <IconButton>
-            <Icon>
-              <Image src={FBIcon} alt={"fb-icon"} />
-            </Icon>
-          </IconButton>
-          <IconButton>
-            <Icon>
-              <Image src={INIcon} alt={"linkIN-icon"} />
-            </Icon>
-          </IconButton>
+        <Box sx={{ display: "flex", flexDirection: "row" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: { xs: "column", lg: "row" },
+              justifyContent: { xs: "flex-start", lg: "flex-end" },
+              alignItems: { xs: "flex-start", lg: "center" },
+              gap: { xs: 0, lg: 3 },
+              height: { lg: "42px" },
+            }}
+          >
+            <Button color="inherit" onClick={() => push("/")}>
+              Home
+            </Button>
+            <Button color="inherit" onClick={() => push("/portofolio")}>
+              Portfolio
+            </Button>
+          </Box>
+          <Box sx={{ display: { lg: "inherit", xs: "none" } }}>
+            <IconButton>
+              <Icon>
+                <Image src={IGIcon} alt={"ig-icon"} />
+              </Icon>
+            </IconButton>
+            <IconButton>
+              <Icon>
+                <Image src={FBIcon} alt={"fb-icon"} />
+              </Icon>
+            </IconButton>
+            <IconButton>
+              <Icon>
+                <Image src={INIcon} alt={"linkIN-icon"} />
+              </Icon>
+            </IconButton>
+          </Box>
         </Box>
       </Box>
 
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: { xs: "column", lg: "row" },
-          justifyContent: { xs: "flex-start", lg: "flex-end" },
-          alignItems: { xs: "flex-start", lg: "center" },
-          gap: { xs: 0, lg: 3 },
-          height: { lg: "42px" },
-        }}
-      >
-        <Button color="inherit" onClick={() => push("/")}>
-          Home
-        </Button>
-        <Button color="inherit" onClick={() => push("/portofolio")}>
-          Portfolio
-        </Button>
-        <Button color="inherit" onClick={() => push("/portofolio")}>
-          Blog
-        </Button>
-        <Button color="inherit" onClick={() => push("/portofolio")}>
-          Course
-        </Button>
-      </Box>
+      {/*<Box*/}
+      {/*  sx={{*/}
+      {/*    display: "flex",*/}
+      {/*    flexDirection: { xs: "column", lg: "row" },*/}
+      {/*    justifyContent: { xs: "flex-start", lg: "flex-end" },*/}
+      {/*    alignItems: { xs: "flex-start", lg: "center" },*/}
+      {/*    gap: { xs: 0, lg: 3 },*/}
+      {/*    height: { lg: "42px" },*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  <Button color="inherit" onClick={() => push("/")}>*/}
+      {/*    Home*/}
+      {/*  </Button>*/}
+      {/*  <Button color="inherit" onClick={() => push("/portofolio")}>*/}
+      {/*    Portfolio*/}
+      {/*  </Button>*/}
+      {/*</Box>*/}
 
       <Box sx={{ display: { lg: "none", xs: "inherit" } }}>
         <IconButton>

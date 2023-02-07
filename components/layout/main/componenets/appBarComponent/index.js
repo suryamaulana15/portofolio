@@ -29,7 +29,7 @@ import Image from "next/image";
 import IGIcon from "../../../../../public/images/icon/ig.png";
 import FBIcon from "../../../../../public/images/icon/fb.png";
 import INIcon from "../../../../../public/images/icon/in.png";
-import Logo from "../../../../../public/images/icon/Logo.png";
+import Logo from "../../../../../public/images/icon/logo_default.png";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -124,18 +124,6 @@ function AppBarComponent(props) {
         </ListItem>
 
         <ListItem key={"left"} disablePadding>
-          <ListItemButton onClick={() => push("/portofolio")}>
-            <ListItemText primary={"Blog"} />
-          </ListItemButton>
-        </ListItem>
-
-        <ListItem key={"left"} disablePadding>
-          <ListItemButton onClick={() => push("/portofolio")}>
-            <ListItemText primary={"Course"} />
-          </ListItemButton>
-        </ListItem>
-
-        <ListItem key={"left"} disablePadding>
           <Box
             sx={{
               display: "flex",
@@ -183,52 +171,52 @@ function AppBarComponent(props) {
     <Fragment>
       <HideOnScroll {...props}>
         <AppBar>
-          <Box
-            sx={{
-              display: { lg: "flex", xs: "none" },
-              flexDirection: "row",
-              justifyContent: "flex-end",
-              alignItems: "center",
-              padding: "8px 120px",
-              gap: 3,
-              height: "42px",
-            }}
-          >
-            <IconButton
-              sx={{
-                padding: 0,
-              }}
-            >
-              <Icon>
-                <Image src={IGIcon} alt={"ig-icon"} />
-              </Icon>
-            </IconButton>
-            <IconButton
-              sx={{
-                padding: 0,
-              }}
-            >
-              <Icon>
-                <Image src={FBIcon} alt={"fb-icon"} />
-              </Icon>
-            </IconButton>
-            <IconButton
-              sx={{
-                padding: 0,
-              }}
-            >
-              <Icon>
-                <Image src={INIcon} alt={"linkIN-icon"} />
-              </Icon>
-            </IconButton>
-            <Divider
-              orientation="vertical"
-              variant="middle"
-              flexItem
-              color={"#E0E0E0"}
-            />
-            <ModeSwitcher />
-          </Box>
+          {/*<Box*/}
+          {/*  sx={{*/}
+          {/*    display: { lg: "flex", xs: "none" },*/}
+          {/*    flexDirection: "row",*/}
+          {/*    justifyContent: "flex-end",*/}
+          {/*    alignItems: "center",*/}
+          {/*    padding: "8px 120px",*/}
+          {/*    gap: 3,*/}
+          {/*    height: "42px",*/}
+          {/*  }}*/}
+          {/*>*/}
+          {/*  <IconButton*/}
+          {/*    sx={{*/}
+          {/*      padding: 0,*/}
+          {/*    }}*/}
+          {/*  >*/}
+          {/*    <Icon>*/}
+          {/*      <Image src={IGIcon} alt={"ig-icon"} />*/}
+          {/*    </Icon>*/}
+          {/*  </IconButton>*/}
+          {/*  <IconButton*/}
+          {/*    sx={{*/}
+          {/*      padding: 0,*/}
+          {/*    }}*/}
+          {/*  >*/}
+          {/*    <Icon>*/}
+          {/*      <Image src={FBIcon} alt={"fb-icon"} />*/}
+          {/*    </Icon>*/}
+          {/*  </IconButton>*/}
+          {/*  <IconButton*/}
+          {/*    sx={{*/}
+          {/*      padding: 0,*/}
+          {/*    }}*/}
+          {/*  >*/}
+          {/*    <Icon>*/}
+          {/*      <Image src={INIcon} alt={"linkIN-icon"} />*/}
+          {/*    </Icon>*/}
+          {/*  </IconButton>*/}
+          {/*  <Divider*/}
+          {/*    orientation="vertical"*/}
+          {/*    variant="middle"*/}
+          {/*    flexItem*/}
+          {/*    color={"#E0E0E0"}*/}
+          {/*  />*/}
+          {/*  <ModeSwitcher />*/}
+          {/*</Box>*/}
           <Box
             sx={{
               display: "flex",
@@ -240,7 +228,11 @@ function AppBarComponent(props) {
               height: "64px",
             }}
           >
-            <Image src={Logo} alt={"logo"} />
+            <Image
+              src={Logo}
+              alt={"logo"}
+              style={{ width: 80, height: "auto" }}
+            />
             <Box
               sx={{
                 display: { lg: "flex", xs: "none" },
@@ -259,12 +251,51 @@ function AppBarComponent(props) {
               <Button color="inherit" onClick={() => push("/portofolio")}>
                 Portfolio
               </Button>
-              <Button color="inherit" onClick={() => push("/portofolio")}>
-                Blog
-              </Button>
-              <Button color="inherit" onClick={() => push("/portofolio")}>
-                Course
-              </Button>
+
+              <Box
+                sx={{
+                  display: { lg: "flex", xs: "none" },
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 3,
+                  height: "42px",
+                }}
+              >
+                <IconButton
+                  sx={{
+                    padding: 0,
+                  }}
+                >
+                  <Icon>
+                    <Image src={IGIcon} alt={"ig-icon"} />
+                  </Icon>
+                </IconButton>
+                <IconButton
+                  sx={{
+                    padding: 0,
+                  }}
+                >
+                  <Icon>
+                    <Image src={FBIcon} alt={"fb-icon"} />
+                  </Icon>
+                </IconButton>
+                <IconButton
+                  sx={{
+                    padding: 0,
+                  }}
+                >
+                  <Icon>
+                    <Image src={INIcon} alt={"linkIN-icon"} />
+                  </Icon>
+                </IconButton>
+                <Divider
+                  orientation="vertical"
+                  variant="middle"
+                  flexItem
+                  color={"#E0E0E0"}
+                />
+                <ModeSwitcher />
+              </Box>
             </Box>
             <Box
               component={"div"}

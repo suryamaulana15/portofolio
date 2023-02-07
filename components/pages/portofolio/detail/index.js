@@ -6,13 +6,30 @@ import {
   Box,
   Slider,
   useTheme,
+  Icon,
+  styled,
 } from "@mui/material";
 import { useRouter } from "next/router";
 
-import { data } from "./data";
 import { ArrowBackOutlined, CheckCircle } from "@mui/icons-material";
 import Grid from "@mui/material/Unstable_Grid2";
 import Image from "next/image";
+
+const CardIconTechnology = styled(Box)((theme) => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "68px",
+  height: "68px",
+  background: "#FFFFFF",
+  border: "0.4px solid #E5EAF2",
+  boxShadow:
+    "0px 199px 80px rgba(0, 0, 0, 0.01), 0px 112px 67px rgba(0, 0, 0, 0.05), 0px 50px 50px rgba(0, 0, 0, 0.09)",
+  borderRadius: "16px",
+}));
+
+import reactIcon from "@/public/images/icon/reactIcon.svg";
 
 function PortofolioDetail({ detail }) {
   const { push } = useRouter();
@@ -122,6 +139,98 @@ function PortofolioDetail({ detail }) {
         <Grid xs={12} lg={6}>
           <Stack spacing={2}>
             <Typography color={palette.secondary.main}>Development</Typography>
+
+            <Typography
+              fontWeight={500}
+              fontSize={34}
+              lineHeight={"42px"}
+              letterSpacing={"0.25px"}
+            >
+              Role
+            </Typography>
+            <Stack direction={"row"} spacing={2}>
+              <Stack flexDirection={"column"} alignItems={"center"}>
+                <CardIconTechnology>
+                  <Image
+                    src={detail.role.icon}
+                    alt={"icon"}
+                    style={{ aspectRatio: 1 / 1, width: 45, height: 45 }}
+                  />
+                </CardIconTechnology>
+                <Typography>{detail.role.name}</Typography>
+              </Stack>
+            </Stack>
+
+            <Typography
+              fontWeight={500}
+              fontSize={34}
+              lineHeight={"42px"}
+              letterSpacing={"0.25px"}
+            >
+              Platform
+            </Typography>
+            <Stack direction={"row"} spacing={2}>
+              {detail.technology.map((technology, index) => {
+                return (
+                  <Box
+                    width={56}
+                    height={56}
+                    bgcolor={"#D7EAFA"}
+                    borderRadius={"40px"}
+                    display={"flex"}
+                    justifyContent={"center"}
+                    alignItems={"center"}
+                    key={index}
+                  >
+                    <Image
+                      src={technology}
+                      alt={"icon"}
+                      style={{ aspectRatio: 1 / 1 }}
+                    />
+                  </Box>
+                );
+              })}
+            </Stack>
+
+            <Typography
+              fontWeight={500}
+              fontSize={34}
+              lineHeight={"42px"}
+              letterSpacing={"0.25px"}
+            >
+              Technology
+            </Typography>
+            <Stack
+              display={"flex"}
+              flexDirection={"row"}
+              gap={"16px"}
+              flexWrap={"wrap"}
+            >
+              {detail?.technologyApps?.map((technology, index) => {
+                return (
+                  <Stack
+                    key={index}
+                    flexDirection={"column"}
+                    alignItems={"center"}
+                  >
+                    <CardIconTechnology>
+                      <Image
+                        src={technology.icon}
+                        alt={"icon"}
+                        style={{ aspectRatio: 1 / 1, width: 45, height: 45 }}
+                      />
+                    </CardIconTechnology>
+                    <Typography>{technology.name}</Typography>
+                  </Stack>
+                );
+              })}
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid xs={12} lg={6}>
+          <Stack spacing={2}>
+            <Typography color={palette.secondary.main}>Feature</Typography>
+
             <Typography
               fontWeight={500}
               fontSize={34}
@@ -177,41 +286,6 @@ function PortofolioDetail({ detail }) {
               )}
             </Stack>
 
-            <Typography
-              fontWeight={500}
-              fontSize={34}
-              lineHeight={"42px"}
-              letterSpacing={"0.25px"}
-            >
-              Technology
-            </Typography>
-            <Stack direction={"row"} spacing={2}>
-              {detail.technology.map((technology, index) => {
-                return (
-                  <Box
-                    width={56}
-                    height={56}
-                    bgcolor={"#D7EAFA"}
-                    borderRadius={"40px"}
-                    display={"flex"}
-                    justifyContent={"center"}
-                    alignItems={"center"}
-                    key={index}
-                  >
-                    <Image
-                      src={technology}
-                      alt={"icon"}
-                      style={{ aspectRatio: 1 / 1 }}
-                    />
-                  </Box>
-                );
-              })}
-            </Stack>
-          </Stack>
-        </Grid>
-        <Grid xs={12} lg={6}>
-          <Stack spacing={2}>
-            <Typography color={palette.secondary.main}>Feature</Typography>
             <Typography
               fontWeight={500}
               fontSize={34}
