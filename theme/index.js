@@ -1,11 +1,11 @@
-import { Urbanist } from '@next/font/google';
-import { experimental_extendTheme  as extendTheme } from '@mui/material/styles';
+import { Urbanist } from "@next/font/google";
+import { experimental_extendTheme as extendTheme } from "@mui/material/styles";
 
 export const urbanist = Urbanist({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  fallback: ['Helvetica', 'Arial', 'sans-serif'],
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  fallback: ["Helvetica", "Arial", "sans-serif"],
 });
 
 const theme = extendTheme({
@@ -13,77 +13,78 @@ const theme = extendTheme({
     light: {
       palette: {
         primary: {
-          main: '#238AE4',
+          main: "#238AE4",
+          contrastText: "#FFFFFF",
         },
         secondary: {
-          main: '#FFB420',
-          contrastText: '#FFFFFF'
+          main: "#FFB420",
+          contrastText: "#FFFFFF",
         },
         text: {
-          primary: '#1D2002',
-          secondary: '#667888',
-          disabled: '#D6DDE8'
+          primary: "#1D2002",
+          secondary: "#667888",
+          disabled: "#D6DDE8",
         },
         background: {
-          paper: '#F8FAFE'
-        }
+          paper: "#F8FAFE",
+        },
       },
     },
     dark: {
       palette: {
         primary: {
-          main: '#238AE4',
+          main: "#238AE4",
         },
         secondary: {
-          main: '#FFB420',
-          contrastText: '#FFFFFF'
+          main: "#FFB420",
+          contrastText: "#FFFFFF",
         },
         text: {
-          primary: '#FFFFFF',
-          secondary: '#BBBBBB',
-          disabled: '#8F8F8F'
+          primary: "#FFFFFF",
+          secondary: "#BBBBBB",
+          disabled: "#8F8F8F",
         },
         background: {
-          paper: '#2D2D2D'
-        }
-      }
-    }
+          paper: "#2D2D2D",
+        },
+      },
+    },
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: ({ theme, ownerState }) => ({
-          textTransform: 'none',
-          fontSize: '16px',
-        })
+          textTransform: "none",
+          fontSize: "16px",
+        }),
       },
     },
     MuiAppBar: {
       styleOverrides: {
-        root: ({theme}) => ({
-          backgroundColor: '#FFFFFF',
-          color: '#000000',
-          [theme.getColorSchemeSelector('dark')] : {
-            backgroundColor:  '#121212',
-            color: '#FFFFFF'
-          }
-        })
-      }
+        root: ({ theme }) => ({
+          backgroundColor: "#FFFFFF",
+          color: "#000000",
+          [theme.getColorSchemeSelector("dark")]: {
+            backgroundColor: "#121212",
+            color: "#FFFFFF",
+          },
+        }),
+      },
     },
     MuiTypography: {
       styleOverrides: {
-        root: ({theme}) => ({
-          color: 'var(--mui-palette-text-primary)'
-        })
-      }
+        root: ({ theme }) => ({
+          color: "var(--mui-palette-text-primary)",
+        }),
+      },
     },
     MuiCssBaseline: {
       styleOverrides: (theme) => ({
         body: {
-          margin: '-20px 0px'
-        }
-      })
-    }
+          margin: "-20px 0px",
+        },
+      }),
+    },
   },
   typography: {
     fontFamily: urbanist.style.fontFamily,

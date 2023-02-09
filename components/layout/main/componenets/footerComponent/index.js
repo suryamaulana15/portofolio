@@ -36,7 +36,8 @@ function FooterComponent() {
           <Image
             src={Logo}
             alt={"logo"}
-            style={{ width: 80, height: "auto" }}
+            style={{ width: 80, height: "auto", cursor: "pointer" }}
+            onClick={() => push("/")}
           />
         </IconButton>
         <Box sx={{ display: "flex", flexDirection: "row" }}>
@@ -58,17 +59,38 @@ function FooterComponent() {
             </Button>
           </Box>
           <Box sx={{ display: { lg: "inherit", xs: "none" } }}>
-            <IconButton>
+            <IconButton
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/suryamaulana_15",
+                  "_blank"
+                )
+              }
+            >
               <Icon>
                 <Image src={IGIcon} alt={"ig-icon"} />
               </Icon>
             </IconButton>
-            <IconButton>
+            <IconButton
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/surya.maulana.39",
+                  "_blank"
+                )
+              }
+            >
               <Icon>
                 <Image src={FBIcon} alt={"fb-icon"} />
               </Icon>
             </IconButton>
-            <IconButton>
+            <IconButton
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/surya-maulana-412188190",
+                  "_blank"
+                )
+              }
+            >
               <Icon>
                 <Image src={INIcon} alt={"linkIN-icon"} />
               </Icon>
@@ -96,17 +118,32 @@ function FooterComponent() {
       {/*</Box>*/}
 
       <Box sx={{ display: { lg: "none", xs: "inherit" } }}>
-        <IconButton>
+        <IconButton
+          onClick={() =>
+            window.open("https://www.instagram.com/suryamaulana_15", "_blank")
+          }
+        >
           <Icon>
             <Image src={IGIcon} alt={"ig-icon"} />
           </Icon>
         </IconButton>
-        <IconButton>
+        <IconButton
+          onClick={() =>
+            window.open("https://www.facebook.com/surya.maulana.39", "_blank")
+          }
+        >
           <Icon>
             <Image src={FBIcon} alt={"fb-icon"} />
           </Icon>
         </IconButton>
-        <IconButton>
+        <IconButton
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/surya-maulana-412188190",
+              "_blank"
+            )
+          }
+        >
           <Icon>
             <Image src={INIcon} alt={"linkIN-icon"} />
           </Icon>

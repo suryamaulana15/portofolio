@@ -40,9 +40,9 @@ function Education() {
                 </TimelineSeparator>
                 <TimelineContent>
                   <Stack>
-                    <Typography>Teknik Informatika</Typography>
-                    <Typography>Universitas Budi Luhur</Typography>
-                    <Typography>2014 - 2018</Typography>
+                    <Typography>Ilmu Komputer (Student Exchange)</Typography>
+                    <Typography>Universitas Gadjah Mada</Typography>
+                    <Typography>jul 2016 - des 2016</Typography>
                   </Stack>
                 </TimelineContent>
               </TimelineItem>
@@ -52,9 +52,9 @@ function Education() {
                 </TimelineSeparator>
                 <TimelineContent>
                   <Stack>
-                    <Typography>Ilmu Komputer (Student Exchange)</Typography>
-                    <Typography>Universitas Gajah Mada</Typography>
-                    <Typography>jul 2016 - des 2016</Typography>
+                    <Typography>Teknik Informatika</Typography>
+                    <Typography>Universitas Budi Luhur</Typography>
+                    <Typography>2014 - 2018</Typography>
                   </Stack>
                 </TimelineContent>
               </TimelineItem>
@@ -103,7 +103,7 @@ function Education() {
                 <TimelineContent>
                   <Stack>
                     <Typography>Frontend Developer</Typography>
-                    <Typography>PT EOA Tech Internasional</Typography>
+                    <Typography>PT EOA Teknologi Internasional</Typography>
                     <Typography>2020 - 2022</Typography>
                   </Stack>
                 </TimelineContent>
@@ -115,7 +115,7 @@ function Education() {
                 <TimelineContent>
                   <Stack>
                     <Typography>Freelancer</Typography>
-                    <Typography>2022 - saat ini</Typography>
+                    <Typography>2018 - saat ini</Typography>
                   </Stack>
                 </TimelineContent>
               </TimelineItem>

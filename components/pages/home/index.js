@@ -12,9 +12,9 @@ function Home() {
       <Stack>
         <Jumbotron />
       </Stack>
-      <Stack>
-        <Profile />
-      </Stack>
+      {/*<Stack>*/}
+      {/*  <Profile />*/}
+      {/*</Stack>*/}
       <Stack>
         <Education />
       </Stack>

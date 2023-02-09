@@ -139,6 +139,12 @@ function AppBarComponent(props) {
               sx={{
                 padding: 0,
               }}
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/suryamaulana_15",
+                  "_blank"
+                )
+              }
             >
               <Icon>
                 <Image src={IGIcon} alt={"ig-icon"} />
@@ -148,6 +154,12 @@ function AppBarComponent(props) {
               sx={{
                 padding: 0,
               }}
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/surya.maulana.39",
+                  "_blank"
+                )
+              }
             >
               <Icon>
                 <Image src={FBIcon} alt={"fb-icon"} />
@@ -157,6 +169,12 @@ function AppBarComponent(props) {
               sx={{
                 padding: 0,
               }}
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/surya-maulana-412188190",
+                  "_blank"
+                )
+              }
             >
               <Icon>
                 <Image src={INIcon} alt={"linkIN-icon"} />
@@ -231,7 +249,8 @@ function AppBarComponent(props) {
             <Image
               src={Logo}
               alt={"logo"}
-              style={{ width: 80, height: "auto" }}
+              style={{ width: 80, height: "auto", cursor: "pointer" }}
+              onClick={() => push("/")}
             />
             <Box
               sx={{
@@ -265,6 +284,12 @@ function AppBarComponent(props) {
                   sx={{
                     padding: 0,
                   }}
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/suryamaulana_15",
+                      "_blank"
+                    )
+                  }
                 >
                   <Icon>
                     <Image src={IGIcon} alt={"ig-icon"} />
@@ -274,6 +299,12 @@ function AppBarComponent(props) {
                   sx={{
                     padding: 0,
                   }}
+                  onClick={() =>
+                    window.open(
+                      "https://www.facebook.com/surya.maulana.39",
+                      "_blank"
+                    )
+                  }
                 >
                   <Icon>
                     <Image src={FBIcon} alt={"fb-icon"} />
@@ -283,6 +314,12 @@ function AppBarComponent(props) {
                   sx={{
                     padding: 0,
                   }}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/surya-maulana-412188190",
+                      "_blank"
+                    )
+                  }
                 >
                   <Icon>
                     <Image src={INIcon} alt={"linkIN-icon"} />

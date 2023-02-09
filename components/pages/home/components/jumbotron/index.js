@@ -7,7 +7,7 @@ import {
   useTheme,
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import profile from "public/images/profile-2.jpg";
+import profile from "public/images/profile3.jpg";
 import Image from "next/image";
 import IGIcon from "@/public/images/icon/ig.png";
 import FBIcon from "@/public/images/icon/fb.png";
@@ -95,7 +95,7 @@ function Jumbotron() {
                 >
                   <Mail sx={{ fontSize: "14px" }} />
                 </Box>
-                <Typography>suryamaulana1980@gmail.com</Typography>
+                <Typography>maulana.surya1501@gmail.com</Typography>
               </Stack>
 
               <Stack direction={"row"} gap={2} alignItems={"flex-start"}>
@@ -126,28 +126,27 @@ function Jumbotron() {
                 sx={{
                   padding: 0,
                 }}
-                // onClick={() =>
-                //   window.open(
-                //     "https://www.instagram.com/suryamaulana_15/",
-                //     "_blank"
-                //   )
-                // }
+                onClick={() =>
+                  window.open(
+                    "https://www.instagram.com/suryamaulana_15",
+                    "_blank"
+                  )
+                }
               >
                 <Icon>
                   <Image src={IGIcon} alt={"ig-icon"} />
                 </Icon>
               </IconButton>
-
               <IconButton
                 sx={{
                   padding: 0,
                 }}
-                // onClick={() =>
-                //   window.open(
-                //     "https://www.facebook.com/surya.maulana.39",
-                //     "_blank"
-                //   )
-                // }
+                onClick={() =>
+                  window.open(
+                    "https://www.facebook.com/surya.maulana.39",
+                    "_blank"
+                  )
+                }
               >
                 <Icon>
                   <Image src={FBIcon} alt={"fb-icon"} />
@@ -157,17 +156,32 @@ function Jumbotron() {
                 sx={{
                   padding: 0,
                 }}
-                // onClick={() =>
-                //   window.open(
-                //     "https://www.linkedin.com/in/surya-maulana-412188190/",
-                //     "_blank"
-                //   )
-                // }
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/surya-maulana-412188190",
+                    "_blank"
+                  )
+                }
               >
                 <Icon>
                   <Image src={INIcon} alt={"linkIN-icon"} />
                 </Icon>
               </IconButton>
+            </Stack>
+            <Stack>
+              <Typography fontWeight={600} fontSize={28}>
+                About Me
+              </Typography>
+              <Typography color={palette.text.secondary}>
+                Experienced as a professional Web Developer for more than 3
+                years,currently focusing on using NextJS familiar with React JS,
+                Cilent and Server Side Rendering, React Context, redux, React
+                Testing Library, material UI, RESTful APIs, Antdesign,
+                Bootstrap, Gitlab, Unix operating system for daily work.
+                Accustomed to working with a team, ready and enthusiastic about
+                receiving input & discussions in determining the technology &
+                the best way to complete any given job.
+              </Typography>
             </Stack>
           </Stack>
         </Grid>
