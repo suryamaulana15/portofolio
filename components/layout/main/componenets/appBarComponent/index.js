@@ -139,12 +139,8 @@ function AppBarComponent(props) {
               sx={{
                 padding: 0,
               }}
-              onClick={() =>
-                window.open(
-                  "https://www.instagram.com/suryamaulana_15",
-                  "_blank"
-                )
-              }
+              href={"https://www.instagram.com/suryamaulana_15"}
+              target={"_blank"}
             >
               <Icon>
                 <Image src={IGIcon} alt={"ig-icon"} />
@@ -154,12 +150,8 @@ function AppBarComponent(props) {
               sx={{
                 padding: 0,
               }}
-              onClick={() =>
-                window.open(
-                  "https://www.facebook.com/surya.maulana.39",
-                  "_blank"
-                )
-              }
+              href={"https://www.facebook.com/surya.maulana.39"}
+              target={"_blank"}
             >
               <Icon>
                 <Image src={FBIcon} alt={"fb-icon"} />
@@ -169,12 +161,8 @@ function AppBarComponent(props) {
               sx={{
                 padding: 0,
               }}
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/surya-maulana-412188190",
-                  "_blank"
-                )
-              }
+              href={"https://www.linkedin.com/in/surya-maulana-412188190"}
+              target={"_blank"}
             >
               <Icon>
                 <Image src={INIcon} alt={"linkIN-icon"} />
@@ -284,12 +272,8 @@ function AppBarComponent(props) {
                   sx={{
                     padding: 0,
                   }}
-                  onClick={() =>
-                    window.open(
-                      "https://www.instagram.com/suryamaulana_15",
-                      "_blank"
-                    )
-                  }
+                  href={"https://www.instagram.com/suryamaulana_15"}
+                  target={"_blank"}
                 >
                   <Icon>
                     <Image src={IGIcon} alt={"ig-icon"} />
@@ -299,12 +283,8 @@ function AppBarComponent(props) {
                   sx={{
                     padding: 0,
                   }}
-                  onClick={() =>
-                    window.open(
-                      "https://www.facebook.com/surya.maulana.39",
-                      "_blank"
-                    )
-                  }
+                  href={"https://www.facebook.com/surya.maulana.39"}
+                  target={"_blank"}
                 >
                   <Icon>
                     <Image src={FBIcon} alt={"fb-icon"} />
@@ -314,12 +294,8 @@ function AppBarComponent(props) {
                   sx={{
                     padding: 0,
                   }}
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/surya-maulana-412188190",
-                      "_blank"
-                    )
-                  }
+                  href={"https://www.linkedin.com/in/surya-maulana-412188190"}
+                  target={"_blank"}
                 >
                   <Icon>
                     <Image src={INIcon} alt={"linkIN-icon"} />
